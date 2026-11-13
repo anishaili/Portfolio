@@ -58,6 +58,12 @@
   transition: all 0.3 ease-in-out;
 }
 
+@media screen and (max-width: 900px) {
+  #projects .about-containers {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media screen and (max-width: 600px) {
   #contact,
   footer {
@@ -78,6 +84,9 @@
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
+  }
+  #projects .about-containers {
+    grid-template-columns: 1fr;
   }
   .contact-info-container {
     margin: 0;
